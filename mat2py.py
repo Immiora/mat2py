@@ -28,7 +28,6 @@ def mat2dict(fname):
         for key, value in D.items(): d[key] = value
         d['__hdf__'] = True
     except:
-        print "why the fuck are you doing this"
         d = loadmat(fname)
         d['__hdf__'] = False
     return d
